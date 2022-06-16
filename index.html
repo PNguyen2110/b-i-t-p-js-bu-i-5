@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        fieldset {
+        width: 40rem;
+        margin: 100px auto;
+        border: 5px solid rgb(99, 99, 194);
+        /* border-radius:20%  ; */
+        height:300px;
+    }
+    legend {
+        color:red;
+        width: 50%;
+    }
+    p{
+        background-color:rgb(99, 99, 194);
+        color:white;
+        width:90%;
+        font-size:20px;
+        text-align: center;
+        margin:auto
+    }
+    </style>
+  </head>
+  <body>
+      
+    <fieldset>
+            <legend class="text-center">BÀI 1: Quản lý tuyển sinh</legend>
+            <div class="my-3 text-center">
+               
+               
+                <input class="ml-2" id="diemChuan" type="number" placeholder="nhập điểm chuẩn" >
+            
+                <select name="" id="khuVuc">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+
+                <select name="" id="doiTuong">
+                    <option value="0">Chọn Đối Tượng</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                
+                
+            </div>
+            <div>
+    
+                <input class="ml-2" id="mon1" type="number" placeholder="nhập điểm môn 1">
+                <input class="ml-2" id="mon2" type="number" placeholder="nhập điểm môn 2">
+                <input class="ml-2" id="mon3" type="number" placeholder="nhập điểm môn 3">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary ml-4 mt-4" id="btnTinhDiem">Tính Điểm</button>
+            </div>
+            <br>
+            <p id="pTinhDiem"></p>
+        </fieldset>
+
+        <!-- BÀI 2: TÍNH TIỀN ĐIỆN -->
+
+        <fieldset>
+            <legend class="text-center">BÀI 2: TÍNH TIỀN ĐIỆN</legend>
+            <div class="my-3 text-center">
+                <input class="ml-2" id="hoTen" type="text" placeholder="nhập họ tên" >
+                <input class="ml-2" id="soKw" type="number" placeholder="nhập số kw">
+            </div>
+            <br>
+            <div>
+                <button class="btn btn-primary ml-4 mt-4" id="btnTinhTien">Tính Tiền Điện</button>
+            </div>
+            <br>
+            <p id="pTinhTien"></p>
+        </fieldset>
+
+
+
+
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
